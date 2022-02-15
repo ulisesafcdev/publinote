@@ -1,0 +1,46 @@
+<%- include('inc/head') %>
+
+<%- include('inc/main') %>
+
+<main>
+
+    <div class="uk-container uk-margin-auto uk-margin-large-top">
+
+        <form action="/guardar" method="POST">
+
+            <fieldset class="uk-fieldset">
+
+                <legend class="uk-legend">
+                    Nueva Nota
+                </legend>
+
+                <div class="uk-margin uk-width-1-4@m">
+                    <input type="text" class="uk-input" placeholder="Titulo" name="titulo">
+                </div>
+                
+                <div class="uk-margin uk-width-1-1@m">
+                    <input type="text" class="uk-input" placeholder="Breve descripcion de tu publicacion" name="descripcion">
+                </div>
+                
+                <div class="uk-margin">
+                    <textarea name="parrafo" id="" cols="30" rows="10" class="uk-textarea" placeholder="Escribe tus notas aqui"></textarea>
+                </div>
+                
+                <div class="uk-margin uk-width-1-4@m">
+                    <input type="text" class="uk-input" placeholder="Author" name="author">
+                </div>
+
+                <div class="uk-margin">
+                    <button type="submit" class="uk-button uk-button-primary">Publicar</button>
+                    <a href="/" class="uk-button uk-button-danger">Cancelar</a>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</main>
+
+<%- include('inc/footer') %>

@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+    color: aliceblue;
+    font-family: 'Consolas';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+a {
+    font-size: 2rem;
+    color: bisque;
+    transition: all .5s ease;
+}
+
+a:hover {
+    color: aquamarine;
+}
+

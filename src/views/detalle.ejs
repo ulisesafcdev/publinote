@@ -1,0 +1,40 @@
+<%- include('inc/head') %>
+
+<%- include('inc/main') %>
+
+<main>
+    <div class="uk-container uk-margin-auto uk-margin-large-top">
+        <!-- <div class="uk-margin-large-bottom">
+            <a href="/" class="uk-button uk-button-primary">Regresar</a>
+        </div> -->
+
+        <article class="uk-article">
+
+            <h1 class="uk-article-title"><%= detalleNota.titulo %></h1>
+
+            <p class="uk-article-meta">
+                Escrito por <a href="#" class="uk-button-text"><%= detalleNota.author %></a> / <%= detalleNota._id %>
+            </p>
+
+            <P class="uk-text-lead">
+                <%= detalleNota.descripcion %>
+            </P>
+
+            <p>
+                <%= detalleNota.parrafo %>
+            </p>
+            <hr>
+            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                <div>
+                    <span uk-icon="arrow-left"></span> <a href="/" class="uk-button uk-button-text">Ir a Inicio</a>
+                    <span uk-icon="list"></span> <a href="/allArticulos" class="uk-button uk-button-text">Ver Publicaciones</a>
+                    <span uk-icon="pencil"></span> <a href="/editar/<%= detalleNota._id %>" class="uk-button uk-button-text">Editar Publicacion</a>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+</main>
+
+<%- include('inc/footer') %>

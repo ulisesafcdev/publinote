@@ -1,0 +1,54 @@
+<%- include('inc/head') %>
+
+<%- include('inc/main') %>
+
+<main>
+
+    <div class="uk-container uk-margin-auto uk-margin-large-top uk-margin-large-bottom">
+
+        <form id="formularioEditar" data-id="<%= editarNota._id %>">
+
+            <fieldset class="uk-fieldset">
+
+                <legend class="uk-legend">
+                    Editar Publicacion <br>
+                </legend>
+                <!-- <p class="uk-text-meta uk-text-light"><%= editarNota._id %></p> -->
+
+                <div class="uk-margin uk-width-1-4@m">
+                    <input type="text" class="uk-input" placeholder="Titulo" id="titulo" name="titulo" value="<%= editarNota.titulo %>">
+                </div>
+                
+                <div class="uk-margin uk-width-1-1@m">
+                    <input type="text" class="uk-input" placeholder="Breve descripcion de tu publicacion" id="descripcion" name="descripcion" value="<%= editarNota.descripcion %>">
+                </div>
+                
+                <div class="uk-margin">
+                    <textarea name="parrafo" id="parrafo" cols="30" rows="10" class="uk-textarea" placeholder="Escribe tus notas aqui"><%= editarNota.parrafo %></textarea>
+                </div>
+                
+                <div class="uk-margin uk-width-1-4@m">
+                    <input type="text" class="uk-input" placeholder="Author" id="author" name="author" value="<%= editarNota.author %>">
+                </div>
+
+                <div class="uk-margin">
+                    <button type="submit" class="uk-button uk-button-primary">Guardar Cambios</button>
+                    <a href="/allArticulos" class="uk-button uk-button-danger">Cancelar</a>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+        <div class="uk-margin-large-top">
+            <p>¿Deseas eliminar la publicacion?</p>
+            <span uk-icon="trash"></span><button id="btnEliminar" data-id="<%= editarNota._id %>" class="uk-button uk-button-text"> Eliminar</button>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="/js/config.js"></script>
+
+<%- include('inc/footer') %>
