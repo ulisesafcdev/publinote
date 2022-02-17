@@ -10,5 +10,6 @@ router.get('/detalle/:id', controller.detalle);
 router.get('/editar/:id', controller.editar);
 router.delete('/:id', controller.eliminar);
 router.put('/:id', controller.editForm);
+router.get('/about', controller.about);
 
 module.exports = router;

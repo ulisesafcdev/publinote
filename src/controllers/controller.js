@@ -147,4 +147,10 @@ controller.editForm = async (req, res) => {
 
 }
 
+controller.about = (req, res) => {
+
+    res.render('about');
+
+}
+
 module.exports = controller;
