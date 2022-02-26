@@ -7,15 +7,27 @@ y el contenido de la nota, adicional de tu nombre como author de la nota._
 
 _**Acá unas capturas reales del proyecto con algunas notas publicadas:**_
 
+- Pagina Principal
+
 ![Pagina principal](/detail/cap1.jpeg "Pagina de inicio")
+
+- Seccion: Notas publicadas
 
 ![Notas publicadas](/detail/cap2.jpeg "Pagina de notas publicadas")
 
+- Seccion: Publicar nueva nota
+
 ![Nueva nota](/detail/cap3.jpeg "Pagina de nueva nota")
+
+- Seccion: Vista previa de una nota en especifico con diferentes opciones
 
 ![Pagina de vista previa](/detail/cap4.jpeg "Detalle de la nota")
 
+- Seccion: Opcion de editar o eliminar nota
+
 ![Pagina de editar y borrar](/detail/cap5.jpeg "Pagina de editar y borrar")
+
+Seccion: Acerca del proyecto
 
 ![About](/detail/cap6.jpeg "Pagina de About")
 
@@ -31,5 +43,4 @@ _**Implementacines del proyecto**_
 - Se implementó un framework CSS para el diseño del proyecto: [UI-Kit](https://getuikit.com/)
 
 > Considero este proyecto el más importante que he creado en mi camino de _Desarrollador Web_. Este Proyecto lo imaginé en mi tiempo libre, y a medida que lo iba imaginando, 
-> analizaba como lo iba a estructurar y a como manejar las rutas con las vistas para un usuario final. Finalmente este proyecto fue el resultado.
-- Ulises AFC'dev.
+> analizaba como lo iba a estructurar y a como manejar las rutas con las vistas para un usuario final. Finalmente este proyecto fue el resultado. Atte: — Ulises AFC'dev.
